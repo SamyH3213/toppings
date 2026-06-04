@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(to top, rgb(24, 0, 42), rgb(17, 17, 156)) no-repeat fixed;
+}
+
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 55pt;
+    text-align: center;
+}
+
+p {
+    font-size: 20pt;
+    text-align: center;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20pt;
+    justify-items: center;
+    height: 300pt;
+}
+
+img {
+    max-height: 20%
+}
+
+.logo {
+    display: block;
+    margin: 10pt auto;
+}
+
+.rotate {
+    animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 25pt;
+    }
+    p {
+        font-size: 12pt;
+    }
+    div {
+        grid-template-columns: 1fr;
+    }
+    .logo {
+        margin: -50% auto;
+    }
+}
